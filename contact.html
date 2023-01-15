@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/contact.css">
+</head>
+
+<body>
+    <!----------Go to top button------------>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+        let mybutton = document.getElementById("myBtn");
+
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <header>
+        <!----------Navigation Bar------------>
+        <div class="container-fluid p-0">
+            <nav class="navbar navbar-expand-lg">
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <div class="close-icon">✖</div>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="ml-auto"></div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">HOME<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">MENU</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reservation.html">RESERVATIONS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">CONTACT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">ABOUT</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <!----------Heading------------>
+    <div class="heading">
+        <h1>THE HAUKAI</h1>
+        <h3>&mdash; CONTACT US &mdash; </h3>
+    </div>
+    <!----------contact details------------>
+    <section class = "contact-section">
+        <div class="contact-body">
+            <div class="contact-info">
+                <div>
+                    <span><i class="fas fa-mobile-alt"></i></span>
+                    <span>Phone No.</span>
+                    <span class="text">09 401 4019</span>
+                </div>
+                <div>
+                    <span><i class="fas fa-map-marker-alt"></i></span>
+                    <span>Address</span>
+                    <span class="text">1 Island Street, Kerikeri, Bay of Islands</span>
+                </div>
+                <div>
+                    <span><i class="fas fa-clock"></i></span>
+                    <span>Opening Hours</span>
+                    <span class="text">Wednesday - Sunday (5:00 PM till late)</span>
+                </div>
+            </div>
+        </div>
+        <!----------contact form------------>
+        <div class = "contact-form">
+            <form>
+              <div>
+                <input type = "text" class = "form-control" placeholder="First Name">
+                <input type = "text" class = "form-control" placeholder="Last Name">
+              </div>
+              <div>
+                <input type = "email" class = "form-control" placeholder="E-mail">
+                <input type = "text" class = "form-control" placeholder="Phone">
+              </div>
+              <textarea rows = "5" placeholder="Message" class = "form-control"></textarea>
+              <input type = "submit" class = "send-btn" value = "send message">
+            </form>
+  
+            <div>
+              <img src = "./assets/contact.jpg" alt = "contact us">
+            </div>
+        </div>
+
+        <div class = "map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52145.52359063788!2d173.87767112167964!3d-35.22899949999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0bb76f05800a6d%3A0x912328fde4819391!2sHaukai%20Restaurant!5e0!3m2!1sen!2snz!4v1673748982525!5m2!1sen!2snz" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </section>     
+
+    <!----------footer------------>
+    <footer>
+        <div class = "contact-footer">
+            <h3>Follow Us</h3>
+            <div class = "social-links">
+              <a href = "#" class = "fab fa-facebook-f"></a>
+              <a href = "#" class = "fab fa-twitter"></a>
+              <a href = "#" class = "fab fa-instagram"></a>
+              <a href = "#" class = "fab fa-linkedin"></a>
+              <a href = "#" class = "fab fa-youtube"></a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

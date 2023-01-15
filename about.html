@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/about.css">
+</head>
+
+<body>
+    <!----------Go to top button------------>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+        let mybutton = document.getElementById("myBtn");
+
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <header>
+        <!----------Navigation Bar------------>
+        <div class="container-fluid p-0">
+            <nav class="navbar navbar-expand-lg">
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <div class="close-icon">✖</div>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="ml-auto"></div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">HOME<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">MENU</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reservation.html">RESERVATIONS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">CONTACT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">ABOUT</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!----------heading------------>
+    <div class="heading">
+        <h1>THE HAUKAI</h1>
+        <h3>&mdash; ABOUT US &mdash; </h3>
+    </div>
+
+    <main>
+
+        <!----------KAUPAPA------------>
+        <section class="section-1">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="panel text-left">
+                            <h1>KAUPAPA</h1>
+                            <p class="pt-4">
+                                Haukai is a space that supports whanaungatanga (building relationships with others), the opportunity to connect or reconnect with people over beautiful Māori infused kai but most importantly allowing people to create their own story here.                              <br>
+                                <br>
+                                We have a passion for sharing our traditional knowledge of maori kai, in a way that is exciting and accessible to everyone. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="detail">
+                            <img src="./assets/restaurant.jpeg" alt="restaurant picture">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!----------Roster Table<------------>        
+        <h2>Staff Roster Table 18th-22th January</h2>
+        <div style="overflow-x:auto;">
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    <th>Saturday</th>
+                    <th>Sunday</th>
+                </tr>
+                <tr>
+                    <td>Maria</td>
+                    <td>x</td>
+                    <td>√</td>
+                    <td>√</td>
+                    <td>x</td>
+                    <td>√</td>
+                </tr>
+                <tr>
+                    <td>Roland</td>
+                    <td>√</td>
+                    <td>x</td>
+                    <td>√</td>
+                    <td>√</td>
+                    <td>x</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+
+    <!----------footer------------>
+    <footer>
+        <div class="contact-footer">
+            <div class="row text-left">
+                <div class="col-md-5">
+                    <h1 class="text-light">THE
+                        HAUKAI</h1>
+                    <p>1 Island Street, Kerikeri, Bay of Islands<br>
+                        09 401 4019<br><br>
+                        Wednesday to Sunday<br>
+                        5:00PM TILL LATE
+                    </p>
+                </div>
+                <div class="col-md-5">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-linkedin"></a>
+                        <a href="#" class="fab fa-youtube"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
